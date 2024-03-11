@@ -27,19 +27,16 @@ public class Main {
     //------------------------------------------------------------------------------------------------------------------
     public static void task2(){
         Scanner sc = new Scanner(System.in);
-
         System.out.println("Lūdzu ievadi Skaitli: ");
         int inNumber = sc.nextInt();
 
         if((inNumber > 10) || (inNumber < 5)) {
             System.out.println("$$");
-        }else if((inNumber >= 6) && (inNumber <= 9)){
+        }else if((inNumber >= 6) && (inNumber <= 9)) {
             System.out.println("$");
-        }
-        else{
+        }else{
             System.out.println(" Skaitlis ir 5 ");
         }
-
     }
     //------------------------------------------------------------------------------------------------------------------
 }
