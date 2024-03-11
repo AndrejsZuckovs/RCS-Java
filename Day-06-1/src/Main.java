@@ -35,7 +35,7 @@ public class Main {
         }else if((inNumber >= 6) && (inNumber <= 9)) {
             System.out.println("$");
         }else{
-            System.out.println(" Skaitlis ir 5 ");
+            System.out.println(" ? ");
         }
     }
     //------------------------------------------------------------------------------------------------------------------
