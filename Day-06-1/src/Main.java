@@ -4,8 +4,10 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //task1();
-        task2();
+        // task1();
+        // task2();
+        // task3();
+        task4();
     }
     //------------------------------------------------------------------------------------------------------------------
     public static void task1(){
@@ -37,6 +39,23 @@ public class Main {
         }else{
             System.out.println(" ? ");
         }
+    }
+    //------------------------------------------------------------------------------------------------------------------
+    public static void task3(){
+        for(int i = 0; i < 11; i++){
+            System.out.println(i);
+        }
+    }
+    //------------------------------------------------------------------------------------------------------------------
+    public static void task4(){
+        int skaitlis = 0;
+
+        for(int i = 0; i < 6; i++){
+            skaitlis = skaitlis + i;
+            System.out.println(" Skaitlis ir: " + skaitlis);
+
+        }
+        System.out.println(" Rezultāts ir: " + skaitlis);
     }
     //------------------------------------------------------------------------------------------------------------------
 }
