@@ -16,12 +16,8 @@ public class Main {
 
         if(inText.equals(setText)){
             System.out.println("Uzvarēji!");
-            if(inText.length() == setText.length()){
-                System.out.println("vienāds simbolu skaits!");
-            }
-            else{
-                System.out.println("zaudēji");
-            }
+        }else if(inText.length() == setText.length()){
+            System.out.println("vienāds simbolu skaits!");
         }
         else{
             System.out.println("zaudēji");
