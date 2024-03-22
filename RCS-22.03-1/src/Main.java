@@ -43,9 +43,9 @@ public class Main {
         System.out.println("Lūdzu ievadi skaitļa " + X + " kāpnātāju :");
         pow = sc.nextInt();
 
-        result = X;
+        result = 1;
 
-        for(int i = 1; i < pow; i++){
+        for(int i = 0; i < pow; i++){
             result = result * X;
         }
 
