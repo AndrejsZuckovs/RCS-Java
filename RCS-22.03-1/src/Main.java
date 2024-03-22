@@ -25,7 +25,7 @@ public class Main {
             for(int i = 1; i < inNumber+1; i++){
 
                 faktorials = faktorials * i;
-                System.out.println("H [" + i + "] : " + faktorials);
+                System.out.println("F [" + i + "] : " + faktorials);
 
             }
             System.out.println("------------------------------");
