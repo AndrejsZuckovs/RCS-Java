@@ -7,7 +7,8 @@ public class Main {
         // task1();
         // task2();
         // task3();
-        task4();
+        // task4();
+        MD2();
     }
     //------------------------------------------------------------------------------------------------------------------
     public static void task1(){
@@ -56,6 +57,25 @@ public class Main {
 
         }
         System.out.println(" Rezultāts ir: " + skaitlis);
+    }
+    //------------------------------------------------------------------------------------------------------------------
+    public static void MD2(){
+        Scanner sc = new Scanner(System.in);
+        int inNumber = 0;
+
+
+        int skaitlis = 0;
+
+        for(int i = 0; i < 5; i++){
+
+            System.out.println("Lūdzu ievadi Skaitli: ");
+            inNumber = sc.nextInt();
+            skaitlis = skaitlis + inNumber;
+            System.out.println("Patreizējā summa ir: " + skaitlis);
+
+        }
+        System.out.println("------------------------------");
+        System.out.println("Rezultāts ir: " + skaitlis);
     }
     //------------------------------------------------------------------------------------------------------------------
 }
