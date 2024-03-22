@@ -36,15 +36,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int X = 0;
         int pow = 0;
-        int result = 0;
+        int result = 1;
 
         System.out.println("Lūdzu ievadi skaitli X: ");
         X = sc.nextInt();
         System.out.println("Lūdzu ievadi skaitļa " + X + " kāpnātāju :");
         pow = sc.nextInt();
-
-        result = 1;
-
+        
         for(int i = 0; i < pow; i++){
             result = result * X;
         }
