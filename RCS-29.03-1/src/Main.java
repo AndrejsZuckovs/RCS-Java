@@ -24,13 +24,11 @@ public class Main {
     //------------------------------------------------------------------------------------------------------------------
     public static void uzdevums2(int j){
         Scanner sc = new Scanner(System.in);
-        int inNumber = 0;
         int summ = 0;
-        System.out.println("Tev kopā būs jāievada " +j + " skaitļi.");
+        System.out.println("Tev kopā būs jāievada " + j + " skaitļi.");
         for (int i = 1; i<j+1;i++){
-            System.out.print("Iebvadi " +i+ ". skaitli: " );
-            inNumber = sc.nextInt();
-            summ +=inNumber;
+            System.out.print("Iebvadi " + i + ". skaitli: " );
+            summ +=sc.nextInt();
         }
         System.out.println("Skaitļu summa ir: " +summ);
     }
