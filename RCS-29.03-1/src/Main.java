@@ -7,7 +7,7 @@ public class Main {
         // teorija1(1,2);
         // teorija2("Hello!");
         // uzdevums1("Hello ","world ", "!");
-        uzdevums2(5);
+        uzdevums2(3);
     }
     //------------------------------------------------------------------------------------------------------------------
     public static void teorija1(int a, int b){
@@ -25,12 +25,22 @@ public class Main {
     public static void uzdevums2(int j){
         Scanner sc = new Scanner(System.in);
         int summ = 0;
-        System.out.println("Tev kopā būs jāievada " + j + " skaitļi.");
-        for (int i = 1; i<j+1;i++){
-            System.out.print("Iebvadi " + i + ". skaitli: " );
-            summ +=sc.nextInt();
+
+        if(j>1) {
+            System.out.println("Tev kopā būs jāievada " + j + " skaitļi.");
+            for (int i = 1; i < j + 1; i++) {
+                System.out.print("Ievadi " + i + ". skaitli: ");
+                summ += sc.nextInt();
+            }
+            System.out.println("Ievadīto skaitļu summa ir: " + summ);
         }
-        System.out.println("Skaitļu summa ir: " +summ);
+        else if(j==1){
+            System.out.print("Ievadi 1x skaitli: ");
+            System.out.println("Ievadītais skaitlis ir: "+sc.nextInt() );
+        }
+        else{
+            System.out.println("Tev nebūs jāievada skaitļi! Paldies :)");
+        }
     }
     //------------------------------------------------------------------------------------------------------------------
     //------------------------------------------------------------------------------------------------------------------
