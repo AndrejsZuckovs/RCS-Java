@@ -82,7 +82,7 @@ public class Main {
         }
 
         System.out.print("Rezultāts: " );
-        System.out.println("┈➤ "+"\u001B[31m" + SUM);
+        System.out.println("\u001B[31m" + SUM);
         System.out.println("┈➤ "+"\u001B[31m" + "END");
 
     }
