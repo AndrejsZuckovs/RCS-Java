@@ -19,7 +19,9 @@ public class Main {
         // teorija1();
         //System.out.println("Rezultāts: "+ teorija1());
         //System.out.println("Rezultāts: "+ uzdevums2(1));
-        System.out.println("Ievadītais skaitlis ir: "+ uzdevums3());
+        //System.out.println("Ievadītais skaitlis ir: "+ uzdevums3());
+
+        System.out.println("MD return: "+ MD("Helloaaa"));
         //--------------------------------------------------------------------------
         System.out.println("\u001B[31m"+"┈➤ " + "END");
     }
@@ -71,8 +73,7 @@ public class Main {
     //------------------------------------------------------------------------------------------------------------------
     public static int uzdevums3(){
         Scanner sc = new Scanner(System.in);
-        int number = 0;
-        
+        int number;
         while(true){
             System.out.print("Ievadi pozetīvu skaitli: ");
             number = sc.nextInt();
@@ -80,6 +81,15 @@ public class Main {
                 return number;
             }
             System.out.print("Ievadītais skaitlis " + number +" nav pozetīvs! Mēģini vēl..\n");
+        }
+    }
+    //------------------------------------------------------------------------------------------------------------------
+    public static int MD(String str){
+        if(str.contains("aaa")){
+            return 1;
+        }
+        else{
+            return 0;
         }
     }
     //------------------------------------------------------------------------------------------------------------------
