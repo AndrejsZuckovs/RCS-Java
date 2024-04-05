@@ -15,7 +15,7 @@ public class Main {
         System.out.println("\u001B[31m"+"┈➤ "  + "START");
         System.out.print("\u001b[37m\n");
         //--------------------------------------------------------------------------
-        uzdevums1(6);
+        uzdevums1(3);
         //teorija1();
         //--------------------------------------------------------------------------
         System.out.println("\u001B[31m"+"┈➤ " + "END");
@@ -33,7 +33,7 @@ public class Main {
             System.out.println("Tev būs jāievada "+number+" skaitļi!");
             for(int i = 1; i<number+1; i++){
                 System.out.print("Ievadi "+i+". skaitli: ");
-                sum = sum + sc.nextInt();
+                sum += sc.nextInt();
             }
         }
         else{
