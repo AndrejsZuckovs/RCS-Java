@@ -75,7 +75,10 @@ public class Main {
         do{
             System.out.print("Ievadi pozetīvu skaitli: ");
             number = sc.nextInt();
-            //System.out.print("Ievadītais skaitlis " + number +" nav pozetīvs! Mēģini vēl..\n");
+            if(number >= 0){
+                return number;
+            }
+            System.out.print("Ievadītais skaitlis " + number +" nav pozetīvs! Mēģini vēl..\n");
         }while(number <= 0);
 
         return number;
