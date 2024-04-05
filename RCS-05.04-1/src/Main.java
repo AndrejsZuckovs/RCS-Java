@@ -72,17 +72,15 @@ public class Main {
     public static int uzdevums3(){
         Scanner sc = new Scanner(System.in);
         int number = 0;
-        do{
+        
+        while(true){
             System.out.print("Ievadi pozetīvu skaitli: ");
             number = sc.nextInt();
             if(number >= 0){
                 return number;
             }
             System.out.print("Ievadītais skaitlis " + number +" nav pozetīvs! Mēģini vēl..\n");
-        }while(number <= 0);
-
-        return number;
-
+        }
     }
     //------------------------------------------------------------------------------------------------------------------
 }
