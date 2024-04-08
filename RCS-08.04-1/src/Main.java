@@ -33,15 +33,16 @@ public class Main {
         int number = 0;
 
             for (int i = 0; i < 5; i++) {
-                System.out.print("Lūdzu ievai skaitli: ");
+                System.out.print("Lūdzu ievadi skaitli: ");
                 try{
                     number = sc.nextInt();
                     if (number == 28) {
                         return true;
                     }
                 }
-                catch(Exception e){
+                catch(Exception e) {
                     System.out.println("Tika ievadīts ne skaitlis!" + e.getMessage());
+                    sc.nextLine();      // Pabeidz skanēšanu !
                 }
             }
         return false;
