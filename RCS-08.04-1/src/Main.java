@@ -71,14 +71,12 @@ public class Main {
             cnt++;
             try{
                 m[i] = sc.nextDouble();
+                avg += m[i];
             }
             catch(Exception e) {
                 System.err.println("Tika ievadīts ne skaitlis!");
                 sc.nextLine();      // Pabeidz skanēšanu! -> https://stackoverflow.com/a/26909638/22964124
             }
-        }
-        for(int i=0; i<m.length;i++){
-            avg += m[i];
         }
         avg = avg/m.length;
 
