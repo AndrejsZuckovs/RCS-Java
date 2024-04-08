@@ -15,15 +15,25 @@ public class Main {
         System.out.println("\u001B[31m"+"┈➤ "  + "START");
         System.out.print("\u001b[37m\n");
         //--------------------------------------------------------------------------
-        //teorija1();
-        boolean result = uzdevums1();
-        System.out.println(result);
+        //boolean result = uzdevums1();
+        //System.out.println(result);
+        //teorija1();                     // Masīvi -> Array
+        double result = uzdevums2();
+        System.out.println("AVG: "+ result);
         //--------------------------------------------------------------------------
         System.out.println("\u001B[31m"+"┈➤ " + "END");
     }
     //------------------------------------------------------------------------------------------------------------------
     public static void teorija1(){
-
+        Scanner sc = new Scanner(System.in);
+        int[] m = new int[6];
+        for(int i=0;i<m.length;i++){
+            System.out.print("Ievadi skaitli: ");
+            m[i]=sc.nextInt();
+        }
+        for(int i=0;i<m.length;i++){
+            System.out.println("i["+i+"]: "+ m[i]);
+        }
     }
     //------------------------------------------------------------------------------------------------------------------
     //------------------------------------------------------------------------------------------------------------------
@@ -48,6 +58,32 @@ public class Main {
         return false;
     }
     //------------------------------------------------------------------------------------------------------------------
+    public static double uzdevums2() {
+        Scanner sc = new Scanner(System.in);
+        double[] m = new double[10];
+        double avg = 0;
+        int cnt = 1;
+
+        System.out.println("Tev būs jāievada: " + m.length + " sakitļi.");
+
+        for (int i = 0; i < m.length; i++) {
+            System.out.println("Lūdzu ievadi " +cnt+". skaitli: ");
+            cnt++;
+            try{
+                m[i] = sc.nextDouble();
+            }
+            catch(Exception e) {
+                System.err.println("Tika ievadīts ne skaitlis!");
+                sc.nextLine();      // Pabeidz skanēšanu! -> https://stackoverflow.com/a/26909638/22964124
+            }
+        }
+        for(int i=0; i<m.length;i++){
+            avg += m[i];
+        }
+        avg = avg/m.length;
+
+        return avg;
+    }
     //------------------------------------------------------------------------------------------------------------------
     //------------------------------------------------------------------------------------------------------------------
 }
