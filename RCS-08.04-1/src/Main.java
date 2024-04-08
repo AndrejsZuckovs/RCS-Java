@@ -28,16 +28,20 @@ public class Main {
     //------------------------------------------------------------------------------------------------------------------
     //------------------------------------------------------------------------------------------------------------------
     //------------------------------------------------------------------------------------------------------------------
-    public static boolean uzdevums1(){
+    public static boolean uzdevums1() {
         Scanner sc = new Scanner(System.in);
         int number = 0;
-
-        for(int i=0;i<5;i++){
-            System.out.print("Lūdzu ievai skaitli: ");
-            number = sc.nextInt();
-            if(number == 28){
-                return true;
+        try {
+            for (int i = 0; i < 5; i++) {
+                System.out.print("Lūdzu ievai skaitli: ");
+                number = sc.nextInt();
+                if (number == 28) {
+                    return true;
+                }
             }
+        }
+        catch(Exception e) {
+            System.out.print("Tika ievadīts ne skaitlis!");
         }
         return false;
     }
