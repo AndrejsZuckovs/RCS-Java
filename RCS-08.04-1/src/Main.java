@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -11,7 +12,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("\u001B[33m 08-Aprīlis:  ✏\uFE0F\u001B[37m-"+"- ");
+        System.out.println("\u001B[33m 08-Aprīlis:  ✏\uFE0F\u001B[37m-"+" ARRAY");
         System.out.println("\u001B[31m"+"┈➤ "  + "START");
         System.out.print("\u001b[37m\n");
         //--------------------------------------------------------------------------
@@ -64,7 +65,7 @@ public class Main {
         double avg = 0;
         int cnt = 1;
 
-        System.out.println("Tev būs jāievada: " + m.length + " sakitļi.");
+        System.out.println("Tev būs jāievada: " + m.length + " skaitļi.");
 
         for (int i = 0; i < m.length; i++) {
             System.out.println("Lūdzu ievadi " +cnt+". skaitli: ");
@@ -79,6 +80,9 @@ public class Main {
             }
         }
         avg = avg/m.length;
+
+        //System.out.println(avg);
+        //System.out.println(Arrays.stream(m).average().getAsDouble());
 
         return avg;
     }
