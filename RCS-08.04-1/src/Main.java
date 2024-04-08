@@ -33,7 +33,7 @@ public class Main {
         int number = 0;
 
             for (int i = 0; i < 5; i++) {
-                System.out.print("Lūdzu ievadi skaitli: ");
+                System.out.println("Lūdzu ievadi skaitli: ");
                 try{
                     number = sc.nextInt();
                     if (number == 28) {
@@ -41,8 +41,8 @@ public class Main {
                     }
                 }
                 catch(Exception e) {
-                    System.out.println("Tika ievadīts ne skaitlis!" + e.getMessage());
-                    sc.nextLine();      // Pabeidz skanēšanu ! -> https://stackoverflow.com/a/26909638/22964124
+                    System.err.println("Tika ievadīts ne skaitlis!");
+                    sc.nextLine();      // Pabeidz skanēšanu! -> https://stackoverflow.com/a/26909638/22964124
                 }
             }
         return false;
