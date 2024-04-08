@@ -42,7 +42,7 @@ public class Main {
                 }
                 catch(Exception e) {
                     System.out.println("Tika ievadīts ne skaitlis!" + e.getMessage());
-                    sc.nextLine();      // Pabeidz skanēšanu !
+                    sc.nextLine();      // Pabeidz skanēšanu ! -> https://stackoverflow.com/a/26909638/22964124
                 }
             }
         return false;
