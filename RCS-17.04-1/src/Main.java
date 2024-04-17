@@ -16,10 +16,19 @@ public class Main {
         System.out.println("\u001B[31m"+"┈➤ "  + "START");
         System.out.print("\u001b[37m\n");
         //--------------------------------------------------------------------------
-        int[] masivs = {1,2,3,4,5,6,7,8,9,10};
+        int[] masivs1 = {5,2,3,4,5,6,7,8,9,10};
+        int[] masivs2 = {1,2,3,4,5,6,7,5,9,10};
+        int[] masivs3 = {1,2,3,4,4,6,7,7,9,10};
+        int[] masivs4 = {5,5,5,5,5,5};
+        int[] masivs5 = {7,7,7};
         //piemers1();
         //teorija1(masivs);
-        uzdevums1(masivs);
+        //uzdevums1(masivs);
+        uzdevums2(masivs1, 5);
+        uzdevums2(masivs2, 5);
+        uzdevums2(masivs3, 5);
+        uzdevums2(masivs4, 5);
+        uzdevums2(masivs5, 5);
         //--------------------------------------------------------------------------
         System.out.println("\u001B[31m"+"┈➤ " + "END");
     }
@@ -51,6 +60,23 @@ public class Main {
         }
     }
     //------------------------------------------------------------------------------------------------------------------
+    public static void uzdevums2(int[] array, int number){
+        System.out.println("Masīvā ar " + array.length + " elementiem tiek meklēts skaitlis : "+ number);
+        int flag = 0;
+        for(int i=0; i<array.length; i++){
+            if(array[i] == number) {
+                System.out.println("Masīva " + i + ". elements sakrīt!");
+                flag++;
+            }
+        }
+        if(flag > 0){
+            System.out.println("Masīvā tika atrasti : " + flag+ " elementi, kuri vienādi ar " + number);
+        }
+        else{
+            System.out.println("Masīvā netika atrasts skaitlis " + number);
+        }
+        System.out.println("--------------------------------");
+    }
     //------------------------------------------------------------------------------------------------------------------
     //------------------------------------------------------------------------------------------------------------------
 }
