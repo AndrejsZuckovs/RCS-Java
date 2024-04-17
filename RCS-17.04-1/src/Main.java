@@ -16,7 +16,7 @@ public class Main {
         System.out.println("\u001B[31m"+"┈➤ "  + "START");
         System.out.print("\u001b[37m\n");
         //--------------------------------------------------------------------------
-        int[] masivs = {1,2,3,4,5};
+        int[] masivs = {1,2,3,4,5,6,7,8,9,10};
         //piemers1();
         //teorija1(masivs);
         uzdevums1(masivs);
@@ -44,8 +44,10 @@ public class Main {
     //------------------------------------------------------------------------------------------------------------------
     //------------------------------------------------------------------------------------------------------------------
     public static void uzdevums1(int[] numbers){
+        System.out.println("Tiks izvadīti masīva " + numbers.length + " elementi:");
         for(int i=0; i<numbers.length; i++){
-            System.out.println(numbers[i] + " ");
+
+            System.out.print("Elements [" +i+ "]: "+numbers[i] + "\n");
         }
     }
     //------------------------------------------------------------------------------------------------------------------
