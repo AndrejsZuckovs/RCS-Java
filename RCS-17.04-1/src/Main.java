@@ -15,7 +15,7 @@ import  java.util.List;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("\u001B[33m 05-Aprīlis:  ✏\uFE0F\u001B[37m-"+"- ");
+        System.out.println("\u001B[33m 17-Aprīlis:  ✏\uFE0F\u001B[37m-"+"- List");
         System.out.println("\u001B[31m"+"┈➤ "  + "START");
         System.out.print("\u001b[37m\n");
         //--------------------------------------------------------------------------
@@ -24,7 +24,8 @@ public class Main {
         int[] masivs3 = {1,2,3,4,4,6,7,7,9,10};
         int[] masivs4 = {5,5,5,5,5,5};
         int[] masivs5 = {7,7,7};
-        int[] numbers = {1, 4, 7, 2, 9, 4, 6};
+        //int[] numbers = {1, 4, 7, 2, 9, 4, 6};
+        int[] numbers = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
         //piemers1();
         //teorija1(masivs);
         //uzdevums1(masivs);
