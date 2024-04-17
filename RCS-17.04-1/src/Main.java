@@ -101,9 +101,14 @@ public class Main {
         for(int i=0; i<array.length; i++){
             intList.add(array[i]);
         }
-        for(int i=0; i<intList.size(); i++){
-            System.out.println(intList.get(i));
+        for(int i=0; i<intList.size(); i++) {
+            System.out.print(intList.get(i) + " ");
         }
+        System.out.print("\n");
+        for(int i=intList.size()-1; i>-1; i--){
+            System.out.print(intList.get(i) + " ");
+        }
+        System.out.print("\n");
     }
     //------------------------------------------------------------------------------------------------------------------
 }
