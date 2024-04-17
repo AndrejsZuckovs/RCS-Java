@@ -1,5 +1,8 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
+import  java.util.List;
+
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -21,15 +24,19 @@ public class Main {
         int[] masivs3 = {1,2,3,4,4,6,7,7,9,10};
         int[] masivs4 = {5,5,5,5,5,5};
         int[] masivs5 = {7,7,7};
+        int[] numbers = {1, 4, 7, 2, 9, 4, 6};
         //piemers1();
         //teorija1(masivs);
         //uzdevums1(masivs);
-        uzdevums2(masivs1, 5);
-        uzdevums2(masivs2, 5);
-        uzdevums2(masivs3, 5);
-        uzdevums2(masivs4, 5);
-        uzdevums2(masivs5, 5);
+//        uzdevums2(masivs1, 5);
+//        uzdevums2(masivs2, 5);
+//        uzdevums2(masivs3, 5);
+//        uzdevums2(masivs4, 5);
+//        uzdevums2(masivs5, 5);
+        //teorija2();
+        uzdevums3(numbers);
         //--------------------------------------------------------------------------
+
         System.out.println("\u001B[31m"+"┈➤ " + "END");
     }
     //------------------------------------------------------------------------------------------------------------------
@@ -51,6 +58,16 @@ public class Main {
         System.out.println(a.length);
     }
     //------------------------------------------------------------------------------------------------------------------
+    public static void teorija2(){
+        List<String> strList = new ArrayList<String>();
+        System.out.println(strList.size());
+        strList.add("aaa");
+        strList.add("bbb");
+        System.out.println(strList.size());
+        System.out.println(strList.get(0));
+        System.out.println(strList.get(1));
+
+    }
     //------------------------------------------------------------------------------------------------------------------
     public static void uzdevums1(int[] numbers){
         System.out.println("Tiks izvadīti masīva " + numbers.length + " elementi:");
@@ -78,5 +95,15 @@ public class Main {
         System.out.println("--------------------------------");
     }
     //------------------------------------------------------------------------------------------------------------------
+    public static void uzdevums3(int[] array){
+        List<Integer> intList = new ArrayList<Integer>();
+
+        for(int i=0; i<array.length; i++){
+            intList.add(array[i]);
+        }
+        for(int i=0; i<intList.size(); i++){
+            System.out.println(intList.get(i));
+        }
+    }
     //------------------------------------------------------------------------------------------------------------------
 }
