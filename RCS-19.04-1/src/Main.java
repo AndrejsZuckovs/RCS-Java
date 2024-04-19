@@ -35,26 +35,21 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Scanner sc2 = new Scanner(System.in);
 
+        List<Double> array = new ArrayList<Double>();
 
-        System.out.println("Cik skaitļus ievadīsi? ");
-        int cnt = sc.nextInt();
-        double[] array = new double[cnt+1];
-        int count = 0;
-        System.out.println("Sāc ievadīt double skaitļus : ");
+        String finish = " ";
 
-        for(int i=1; i< array.length; i++) {
-            System.out.print("Ievadi "+ i+ ". skaitli : ");
-            array[i-1] = sc.nextDouble();
-            count++;
+        while(!finish.equals("x")) {
+            System.out.print("Ievadi skaitli : ");
+            double num = sc.nextDouble();
+            array.add(num);
+
             System.out.print("Lai beigtu ievadi x :");
-            String finish = sc2.nextLine();
+            finish = sc2.nextLine();
 
-            if(finish.equals("X")){
-                break;
-            }
         }
 
-        double avg = uzdevums2(array, count);
+        double avg = uzdevums2(array);
         System.out.println("AVG: "+avg);
         //--------------------------------------------------------------------------
         System.out.println("\u001B[31m"+"┈➤ " + "END");
@@ -71,12 +66,12 @@ public class Main {
         }
     }
     //------------------------------------------------------------------------------------------------------------------
-    public static double uzdevums2(double[] array, int cnt){
+    public static double uzdevums2(List<Double>array){
         double avg = 0;
-        for (int i = 0; i < cnt; i++) {
-            avg += array[i];
+        for (int i = 0; i < array.size(); i++) {
+            avg += array.get(i);
         }
-        avg = avg/cnt;
+        avg = avg/array.size();
 
         return  avg;
     }
