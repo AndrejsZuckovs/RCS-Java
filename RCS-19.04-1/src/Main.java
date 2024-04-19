@@ -13,24 +13,21 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("\u001B[33m 05-Aprīlis:  ✏\uFE0F\u001B[37m-"+"- ");
+        System.out.println("\u001B[33m 19-Aprīlis:  ✏\uFE0F\u001B[37m-"+"- List");
         System.out.println("\u001B[31m"+"┈➤ "  + "START");
         System.out.print("\u001b[37m\n");
         //--------------------------------------------------------------------------
-       // String[] studenti = {"Andrejs","Janis","Ieva","Olga","Petris"};
-
         Scanner scName = new Scanner(System.in);
-        List<String> intList = new ArrayList<String>();
+        List<String> studentList = new ArrayList<String>();
         int studentCnt = 0;
 
         System.out.println("Ievadi cik studentus ievadīsi:");
         studentCnt = sc.nextInt();
 
         for(int i=0; i< studentCnt+1; i++){
-            intList.add( sc.nextLine());
+            studentList.add(sc.nextLine());
         }
-
-        uzdevums1(intList);
+        uzdevums1(studentList);
         //--------------------------------------------------------------------------
         System.out.println("\u001B[31m"+"┈➤ " + "END");
     }
