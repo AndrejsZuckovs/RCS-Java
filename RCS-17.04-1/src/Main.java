@@ -35,7 +35,8 @@ public class Main {
 //        uzdevums2(masivs4, 5);
 //        uzdevums2(masivs5, 5);
         //teorija2();
-        uzdevums3(numbers);
+        //uzdevums3(numbers);
+        MS();
         //--------------------------------------------------------------------------
 
         System.out.println("\u001B[31m"+"┈➤ " + "END");
@@ -110,6 +111,15 @@ public class Main {
             System.out.print(intList.get(i) + " ");
         }
         System.out.print("\n");
+    }
+    //------------------------------------------------------------------------------------------------------------------
+    public static void MS(){
+//        Random r = new Random();
+//        r.nextInt(10);
+//        int max = 0;
+//
+//        for(int i=0; i<)
+
     }
     //------------------------------------------------------------------------------------------------------------------
 }
