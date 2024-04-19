@@ -23,7 +23,7 @@ public class Main {
 
         System.out.println("Ievadi cik studentus ievadīsi:");
         studentCnt = sc.nextInt();
-
+        System.out.println("Ievadi "+studentCnt+ " studentu vārdus!");
         for(int i=0; i< studentCnt+1; i++){
             studentList.add(sc.nextLine());
         }
