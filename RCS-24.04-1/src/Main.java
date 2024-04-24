@@ -27,12 +27,10 @@ public class Main {
         int[] numbers = new int[3];
 
         System.out.println("Ievadi trīs skaitļus!");
-        for(int i=0; i<3; i++){
+        for(int i=0; i<numbers.length; i++){
             numbers[i] = sc.nextInt();
         }
-
         System.out.println("Spēles rezūltāts: "+ Games.guess(numbers));
-
         //--------------------------------------------------------------------------
         System.out.println("\u001B[31m"+"┈➤ " + "END");
     }
