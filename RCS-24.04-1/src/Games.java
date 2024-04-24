@@ -7,12 +7,16 @@ public class Games {
 
         System.out.println("Spēles cipars: "+ gameNumber);
 
-        for(int i=0; i<myNumber.length; i++){
-            System.out.println("Vai "+myNumber[i]+" == "+ gameNumber +" ?");
-            if(myNumber[i] == gameNumber){
-                return true;
-            }
+        if(a== gameNumber){
+            return true;
         }
+        if(b == gameNumber){
+            return true;
+        }
+        if(c == gameNumber){
+            return true;
+        }
+
         return false;
     }
 }
