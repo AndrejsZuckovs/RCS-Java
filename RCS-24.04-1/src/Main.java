@@ -21,9 +21,17 @@ public class Main {
         //Samples.sample1();
         //--------------------------------------------------------------------------
         //teorija1();
-        
+
         // Uzdevums #1
-        System.out.println("Spēles rezūltāts: "+ Games.guess(10));
+
+        int[] numbers = new int[3];
+
+        System.out.println("Ievadi trīs skaitļus!");
+        for(int i=0; i<3; i++){
+            numbers[i] = sc.nextInt();
+        }
+
+        System.out.println("Spēles rezūltāts: "+ Games.guess(numbers));
 
         //--------------------------------------------------------------------------
         System.out.println("\u001B[31m"+"┈➤ " + "END");
