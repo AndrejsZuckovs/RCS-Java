@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -21,16 +22,22 @@ public class Main {
         //Samples.sample1();
         //--------------------------------------------------------------------------
         //teorija1();
-
+        //--------------------------------------------------------------------------
         // Uzdevums #1
-
-        int[] numbers = new int[3];
-
-        System.out.println("Ievadi trīs skaitļus!");
-        for(int i=0; i<numbers.length; i++){
-            numbers[i] = sc.nextInt();
+//        int[] numbers = new int[3];
+//        System.out.println("Ievadi trīs skaitļus!");
+//        for(int i=0; i<numbers.length; i++){
+//            numbers[i] = sc.nextInt();
+//        }
+//        System.out.println("Spēles rezūltāts: "+ Games.guess(numbers));
+        //--------------------------------------------------------------------------
+        // Uzdevums #2
+        List<Integer> numbers = Tools.number(false);
+        System.out.println("---------------");
+        System.out.println("Skaitļi: ");
+        for(int i=0; i<numbers.size(); i++){
+            System.out.println(numbers.get(i));
         }
-        System.out.println("Spēles rezūltāts: "+ Games.guess(numbers));
         //--------------------------------------------------------------------------
         System.out.println("\u001B[31m"+"┈➤ " + "END");
     }
