@@ -22,15 +22,15 @@ public class Main {
         //--------------------------------------------------------------------------
         //teorija1();
 
-        //Uzdevums #1
+        // Uzdevums #1
+
         int[] numbers = new int[3];
 
         System.out.println("Ievadi trīs skaitļus!");
         for(int i=0; i<numbers.length; i++){
             numbers[i] = sc.nextInt();
         }
-        System.out.println("Spēles rezūltāts: "+ Games.guess(numbers[0], numbers[1], numbers[2]));
-
+        System.out.println("Spēles rezūltāts: "+ Games.guess(numbers));
         //--------------------------------------------------------------------------
         System.out.println("\u001B[31m"+"┈➤ " + "END");
     }
