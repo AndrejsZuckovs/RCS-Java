@@ -22,7 +22,6 @@ public class Tools {
                 numbers.add(Integer.valueOf(rn.nextInt(100) + 1));
             }
         }
-
         return numbers;
     }
 }
